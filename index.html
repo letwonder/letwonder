@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <!-- Bootstrap CSS -->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/home.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <!-- Googel Font -->
+
+        <link href='https://fonts.googleapis.com/css?family=Pangolin' rel='stylesheet'>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </head>
+
+    <style>
+        /* animated banner start */
+        #animatedbanner {
+            font-family: Pangolin;
+            padding: 3em 2em;
+            font-size: 18px;
+            background: #2220;
+            color: #000;
+            position: absolute;
+            right: 1px;
+            top: 300px;
+        }
+
+        h1,h2 {
+        font-weight: 200;
+        margin: 0.4em 0;
+        }
+        h1 { font-size: 3.5em; }
+        h2 {
+        color: #000;
+        font-size: 2em;
+        }
+        /* animated banner close */
+
+        
+        .fadeinDiv {
+            opacity: 0;
+            position: relative;
+        }
+
+        .footer {
+            padding: 11px 15px;
+            border-radius: 0px 0px 3px 3px;
+        }
+    </style>
+    <body>
+
+
+
+
+        <style>
+            .navbar {
+                padding: .1rem 5rem;
+              }
+            
+            .color{
+                /* background-color:#ff4d2d; */
+                background-color:#fff2f2;
+                border-bottom: 2px solid #f91111;
+              }
+        
+            .nb {
+                margin-top: 5px;
+                margin-bottom: none;
+              }
+        
+        
+            .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+                background-color: #17A2B8;
+            }
+            .dropdown-menu{
+                top: 37px;
+                right: -12px;
+                left: unset;
+                width: 11rem;
+                box-shadow: 0px 5px 7px -1px #c1c1c1;
+                padding-bottom: 0px;
+                padding: 0px;
+            }
+            .dropdown-menu:before{
+                content: "";
+                position: absolute;
+                top: -20px;
+                right: 12px;
+                border:10px solid #343A40;
+                border-color: transparent transparent #FF2700 transparent;
+            }
+        
+            .text-info{
+                color: #FF2700!important;
+            }
+        
+            .head{
+                padding:5px 15px;
+                border-radius: 3px 3px 0px 0px;
+            }
+            .footer{
+                padding:5px 15px;
+                border-radius: 0px 0px 3px 3px; 
+            }
+            .notification-box{
+                padding: 10px 0px; 
+            }
+            .bg-gray{
+                background-color: #eee;
+            }
+        
+            .bg-dark{
+                background-color: #FF2700!important;
+            }
+            @media (max-width: 640px) {
+                .dropdown-menu{
+                    left: -325px;  
+                    width: 361px;
+                } 
+                .nav{
+                    display: block;
+                }
+                .nav .nav-item,.nav .nav-item a{
+                    padding-left: 0px;
+                }
+                .message{
+                    font-size: 13px;
+                }
+            }
+        
+                
+            @media (max-width: 992px) {
+                .navbar-toggler {
+                  position: absolute;
+                  left: 10px;
+                  top:7px;
+                }
+        
+            }
+        
+        </style>
+
+        <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-light color bottom" style="padding: 0.1rem 1rem">
+        
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#compressedCase" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>    
+        
+            <a class="navbar-brand mr-auto ml-auto" href="index.html">
+                <img src="images/Logo3.png" width="150" alt="Let Wonder" loading="lazy">
+            </a>
+        
+        
+
+        
+
+        
+          <div class="collapse navbar-collapse nb" id="compressedCase">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#loginPopup" data-toggle="modal" >Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="policy.html">Policy<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        
+        <div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title ">Contact Us:</h5>
+                    </div><!--Body close-->
+                    <div class="modal-body">
+                        Email id: <h9>support@letwonder.com</h9>
+                    </div>
+                </div>
+            </div>
+        </div><!--Modal Closed-->
+
+
+
+
+
+
+
+        <header style="height: 97vh; background: url(images/banner.png) no-repeat center center; background-size:cover; margin-bottom: 2px;margin-top: 30px;">
+            
+            <!-- Animated banner text -->
+            
+            <div id="animatedbanner">
+                <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+                <h1> <b>We created platform to <br>
+                <b><u>Let</u>   
+                <span
+                    style="color: #FF2700;text-align: center;"
+                    class="txt-rotate"
+                    data-period="2000"
+                    data-rotate='[ "your mind", "your spirit", "your thoughts", "**you**"]'></span>
+                    <span style="text-align: center;"><u>Wonder</u>.</span></b>
+                </b></h1>
+                <!-- <h1 style="text-align: center;"><u>Wonder.</u></h1>  -->
+            </div>
+            <!-- Animated banner text end -->
+        
+        </header>
+
+        
+        <!-- 50-50 Image and Text -->
+        <section>
+                <div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,245.3C1120,245,1280,171,1360,133.3L1440,96L1440,320L1360,
+                        320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                    </svg> -->
+                    <div class="wave" style="padding-bottom: 50px; padding-top: 50px;">
+                        <div class="container">
+                            <div class="row fadeinDiv">
+                                <article class="col-md-6 col-sm-12 mt-5 order">
+                                    <h2 style="font-family: 'Pangolin';">Even if you have idea from another idea you can 
+                                    simply explore it by <b style="color: #FF2700;">wonder too</b>.</h2>
+                                </article>
+                                <article class="col-md-6 col-sm-12">
+                                    <img style="display: block; width: 100%;" src="images/Share any thoughts-trans.png">
+                                </article>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,245.3C1120,245,1280,171,1360,133.3L1440,96L1440,0L1360,
+                        0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+                    </svg> -->
+                </div>
+                <div class="container" style="margin-top: 85px;padding-bottom: 50px; padding-top: 10px;">
+                    <div class="row fadeinDiv">
+                        <article class="col-md-6 col-sm-12">
+                            <img style="display: block; width: 110%;" src="images/Share any thoughts.png">
+                        </article>
+                        <article class="col-md-6 col-sm-12 mt-5">
+                            <h2 style="font-family: 'Pangolin';">You can share your thoughts and let the world react on that.</h2>
+                        </article>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,128L60,149.3C120,171,240,213,360,208C480,203,600,149,720,149.3C840,149,960,203,1080,213.3C1200,224,1320,
+                        192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,
+                        320C240,320,120,320,60,320L0,320Z"></path>
+                    </svg> -->
+                    <div class="wave" style="padding-bottom: 50px; padding-top: 50px;">
+                        <div class="container">
+                            <div class="row fadeinDiv">
+                                <article class="col-md-6 col-sm-12 mt-5 order">
+                                    <h2 style="font-family: 'Pangolin';">So now you can't miss any of your thoughts and you never know 
+                                        when your random thoughts become world changing wonder.</h2>
+                                </article>
+                                <article class="col-md-6 col-sm-12">
+                                    <img style="display: block; width: 75%;" src="images/world changing wonder.png">
+                                </article>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,128L60,149.3C120,171,240,213,360,208C480,203,600,149,720,149.3C840,149,960,203,1080,213.3C1200,224,1320,192,
+                        1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                    </svg> -->
+                </div>
+
+                <div class="container" style="padding-bottom: 50px; padding-top: 50px;">
+                    <div class="row mb-3 fadeinDiv">
+                        <article class="col-md-6 col-sm-12">
+                            <img style="display: block; width: 100%;" src="images/creative artist.png">
+                        </article>
+                        <article class="col-md-6 col-sm-12 mt-5">
+                            <h2 style="font-family: 'Pangolin';">Whether you are creative artist, film maker or have a new business 
+                            idea or just running your mind in a free time, you can always explore it and see how it receive in the 
+                            world before making anything.</h2>
+                        </article>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,128L60,149.3C120,171,240,213,360,208C480,203,600,149,720,149.3C840,149,960,203,1080,213.3C1200,224,1320,
+                        192,1380,176L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,
+                        320C240,320,120,320,60,320L0,320Z"></path>
+                    </svg> -->
+                    <div class="wave" style="padding-bottom: 50px; padding-top: 50px;">
+                        <div class="container">
+                            <div class="row fadeinDiv">
+                                <article class="col-md-6 col-sm-12 mt-5 order">
+                                    <h2 style="font-family: 'Pangolin';">Is your mind too much obsessed with negativities 
+                                        around world? <br>
+                                        Well no problem just look what are other people's creative thoughts and enable 
+                                        your creative mind by commenting on them.</h2>
+                                </article>
+                                <article class="col-md-6 col-sm-12">
+                                    <img style="display: block; width: 100%; margin-top: -70px;" src="images/world changing wonder2.png">
+                                </article>    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ff5500" fill-opacity="0.29" 
+                        d="M0,128L60,149.3C120,171,240,213,360,208C480,203,600,149,720,149.3C840,149,960,203,1080,213.3C1200,224,1320,192,
+                        1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+                    </svg> -->
+                </div>
+
+      
+            
+        </section>
+        
+
+
+        <script>
+            $(document).ready(function () {
+
+            // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
+            $('.noti_Counter')
+                .css({ opacity: 21 })
+                .text('7')  // ADD DYNAMIC VALUE (YOU CAN EXTRACT DATA FROM DATABASE OR XML).
+                .css({ top: '-5px' })
+                .animate({ top: '-2px', opacity: 1 }, 500);
+
+            
+            });
+
+         
+            // banner text animation start
+            var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+            };
+
+            TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+            var that = this;
+            var delta = 300 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+            };
+
+            window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #FF2700 }";
+            document.body.appendChild(css);
+            };
+            // banner text animation start
+
+
+
+        </script>
+
+        <script type="text/javascript">
+            const BOTTOM_OFFSET = 100;
+
+            $(document).ready(function () {
+                /* Everytime the window is scrolled ... */
+                $(window).scroll(function () {
+                    /*Check the location of each desired element */
+                    $('.fadeinDiv').each(function (i) {
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                        var bottom_of_window =$(window).scrollTop() + $(window).height();
+     
+                        /* If the object is completely visible in the window */
+                        if (bottom_of_window+BOTTOM_OFFSET >bottom_of_object) {
+                            $(this).animate({ 
+                                opacity: '1',
+                                left: "20",
+                            }, 500);
+                        }
+                    });
+                });
+            });
+        </script>
+        
+
+    </body>
+    <div style="background-color: #fff2f2; border-top: 2px solid #f91111;">
+        <footer class="footer" style="text-align: center;">
+            <div class="container">
+            <span>All rights are reserved under Nitai Pada kamala Pvt Ltd.</span>
+            </div>
+        </footer>
+    </div>
+</html>
